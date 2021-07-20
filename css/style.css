@@ -40,6 +40,20 @@ body{
     background-color: rgb(23, 22, 29);
 }
 /*----------------- Nav ---------------- */
+
+.fa-plus-square{
+    font-size: 40px;
+    vertical-align: middle;
+}
+.p-list-n h2{
+    color: white;
+    padding-top: 10px;
+}
+.p-list-n li{
+    color: rgb(155, 155, 155);
+    list-style-type: none;
+    padding: 5px 0;
+}
 .logo-n img{
     width: 100%;
 }
@@ -75,6 +89,7 @@ body{
     width: 288px;
     height: 90vh;
     background-color: black;
+    overflow: auto;
 }
 /*--------------- contenuto principale ------------- */
 
@@ -95,6 +110,7 @@ body{
 }
 /*---------------- footer ------------------ */
 .main-f{
+    min-height: 90px;
     height: 90px;
     width: 100%;
     background-color: rgb(59, 59, 59);
