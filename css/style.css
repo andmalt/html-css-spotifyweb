@@ -49,6 +49,7 @@ body{
 .p-list-n{
     overflow: auto;
 }
+
 .p-list-n h2{
     color: white;
     padding-top: 15px;
@@ -58,7 +59,10 @@ body{
     list-style-type: none;
     padding: 10px 0;
     font-size: 14px;
-    cursor: pointer;
+}
+.p-list-n a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
 }
 .logo-n img{
     width: 100%;
@@ -75,7 +79,7 @@ body{
 }
 .nav-m-n li a{
     text-decoration: none;
-    color: gray;
+    color: rgb(155, 155, 155);
 }
 .nav-m-n li:nth-of-type(1) a{
     color: white;
@@ -89,20 +93,53 @@ body{
 }
 .big-left{
     height: 100%;
+    background-color: black;
 }
 .main-n{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 20px 20px 0;
     width: 288px;
-    height: 100%;
-    background-color: black;
+    height: calc(100% - 100px);
 }
 .main-acc-n{
     display: flex;
-    flex-direction: row-reverse;
-    font-size: 40px;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100px;
+    padding: 0 20px;
+}
+.dow-n{
+    margin: 10px 0;
+}
+.dow-n>a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+}
+.acc-n{
+    margin: 10px 0;
+}
+.acc-n>a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.profile{
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 22px;
+    width: 22px;
+    vertical-align: middle;
+}
+.download{
+    width: 20px;
+    vertical-align: middle;
+}
+.dow-n>a>.download{
+    margin-right: 5px;
 }
 /*--------------- contenuto principale ------------- */
 
@@ -119,11 +156,30 @@ body{
     justify-content: space-between;
 }
 .box-song{
-    max-width: 200px;
-    height: 200px;
+    max-width: 180px;
+    height: 180px;
     margin: 5px;
     flex: 1 1 100px;
     background-color: lightblue;
+}
+.mini-nav{
+    width: 100%;
+    text-align: center;
+}
+.mini-nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+.mini-nav li a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+    font-size: 13px;
+
+}
+.main-cont h1{
+    color: white;
+    padding: 20px 0;
 }
 /*---------------- footer ------------------ */
 .main-f{

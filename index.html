@@ -16,6 +16,7 @@
 </head>
 <body>
     <div class="container clearfix">
+        <!-- container di sinistra dove c'è il nav  -->
         <div class="big-left fl">
             <!-- contenuto della barra di navigazione principale che si trova sulla sinistra  -->
             <nav class="main-n">
@@ -36,30 +37,33 @@
                 <div class="p-list-n">
                     <h2>PLAYLIST</h2>
                     <ul>
-                        <li><i class="fas fa-plus-square"></i>Crea Playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
+                        <li><a href="#"><i class="fas fa-plus-square"></i>Crea Playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
                     </ul>
                 </div>
-               
+                
                 
             </nav>
             <!-- nome account e download app   -->
             <div class="main-acc-n">
-                <div class="acc-n">
-                    <img src="img/profile.svg" alt="immagine profilo">
-                    <span class="name-n"></span>
+                <!-- download app  -->
+                <div class="dow-n">
+                    <a href="#"><img class="download" src="img/download.svg" alt="logo download">Installa App</a>
                 </div>
                 <hr>
-                <div class="dow-n">
+                <div class="acc-n">
+                    <a href="#"><img class="profile" src="img/profile.svg" alt="immagine profilo">John Doe</a>
                 </div>
             </div>
+            
         </div>
+        <!-- container di destra dove c'è il main  -->
         <div class="big-right fl">
             <!-- contenuto principale -->
             <main class="main-m">
@@ -69,7 +73,19 @@
                 </section>
                 <!-- contenuti musicali  -->
                 <div class="main-cont">
+                    <nav class="mini-nav">
+                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVI USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+                    </nav>
+                    <h1>Recently played</h1>
                     <div class="recently-played">
+                        <div class="box-song">
+
+                        </div>
                         <div class="box-song">
 
                         </div>
@@ -90,13 +106,28 @@
             </main>
         </div>
         
-        
-        
-        
     </div>
     <!-- barra di ascolto del footer  -->
     <footer class="main-f fl">
+        <!-- visualizzatore brano  -->
+        <div class="view-song">
 
+        </div>
+        <!-- contenuti toolbar  -->
+        <div class="footer-toolbar">
+            <div class="footer-l">
+
+            </div>
+    
+            <div class="footer-c">
+    
+            </div>
+    
+            <div class="footer-r">
+    
+            </div>
+        </div>
+        
     </footer>
 </body>
 </html>
