@@ -1,31 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web exercise</title>
-
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- css  -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
     <div class="container clearfix">
         <!-- piccolo header con pulsante -->
-        <header id="main-h" class="clearfix fr">
-            <button href="#" class="button-h fr">EFFETTUA L'UPGRADE</button>
+        <header class="main-h">
+            <button href="#" class="button-h">EFFETTUA L'UPGRADE</button>
         </header>
         <!-- contenuto della barra di navigazione principale che si trova sulla sinistra  -->
-        <nav id="main-n">
+        <nav class="main-n fl">
+            <!-- main logo nel nav  -->
+            <div class="logo-n">
+                <img src="img/logo.svg" alt="logo Spotify">
+            </div>
+            <!-- nav del main-n dove c'è l'home e la ricerca  -->
+            <div class="nav-m-n">
+                <ul>
+                    <li><a href="#"><img src="img/home.svg" alt="logo casetta"> Home</a></li>
+                    <li><a href="#"><img src="img/search.svg" alt="logo Cerca"> Cerca</a></li>
+                    <li><a href="#"><img src="img/libreria.svg" alt="logo libreria"> La tua libreria</a></li>
+                </ul>
+            </div>
+            <!-- playlist -->
+            <div class="p-list-n">
 
+            </div>
         </nav>
         <!-- contenuto principale  -->
-        <main id="main-cont">
+        <main class="main-cont">
+            <div class="recently-played">
+                <div class="box-song">
 
+                </div>
+                <div class="box-song">
+
+                </div>
+                <div class="box-song">
+
+                </div>
+                <div class="box-song">
+
+                </div>
+                <div class="box-song">
+
+                </div>
+            </div>
         </main>
         <!-- barra di ascolto del footer  -->
-        <footer id="main-f">
+        <footer class="main-f">
 
         </footer>
     </div>
