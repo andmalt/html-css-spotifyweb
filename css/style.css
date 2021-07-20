@@ -71,9 +71,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    top: 0;
-    z-index: 3;
     padding: 20px;
     width: 288px;
     height: 90vh;
@@ -82,7 +79,6 @@ body{
 /*--------------- contenuto principale ------------- */
 
 .main-cont{
-    margin-left: 288px;
     padding: 12px;
 }
 .recently-played{
@@ -99,10 +95,7 @@ body{
 }
 /*---------------- footer ------------------ */
 .main-f{
-    position: absolute;
-    bottom: 0;
     height: 90px;
     width: 100%;
     background-color: rgb(59, 59, 59);
-    z-index: 10;
 }
