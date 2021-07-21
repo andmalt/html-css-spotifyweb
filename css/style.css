@@ -93,6 +93,7 @@ body{
 }
 .big-left{
     height: 100%;
+    width: 260px;
     background-color: black;
 }
 .main-n{
@@ -100,7 +101,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     padding: 20px 20px 0;
-    width: 288px;
+    width: 100%;
     height: calc(100% - 100px);
 }
 .main-acc-n{
@@ -145,7 +146,7 @@ body{
 
 .big-right{
     height: 100%;
-    width: calc(100% - 288px);
+    width: calc(100% - 260px);
 }
 .main-cont{
     padding: 12px;
@@ -247,6 +248,9 @@ body{
     width: 45%;
     text-align: center;
 }
+.play-bar{
+    min-width: 210px;
+}
 .play-bar li{
     list-style-type: none;
     display: inline-block;
@@ -283,6 +287,19 @@ body{
 /* parte destra della toolbar  */
 
 .footer-r{
-    width: 160px;
-    height: 100%;
+    width: 150px;
+    text-align: center;
+}
+.footer-r>.list-f-r,.tv-f-r,.volume-icon-f-r,.t-bar{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2px;
+}
+.footer-r .fas{
+    font-size: 10px;
+    color: white;
+}
+.footer-r>.t-bar{
+    width: 40%;
+    margin: 0;
 }
