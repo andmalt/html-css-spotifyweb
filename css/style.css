@@ -191,7 +191,7 @@ body{
     min-height: 90px;
     height: 90px;
     width: 100%;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(43, 43, 43);
 }
 .song-cover{
     width: 40px;
@@ -225,7 +225,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    width: 4%;
+    width: 6%;
 }
 .view-song{
     text-align: left;
@@ -243,14 +243,46 @@ body{
 
 /* parte centrale della toolbar */
 
+.footer-c{
+    width: 45%;
+    text-align: center;
+}
 .play-bar li{
     list-style-type: none;
     display: inline-block;
     color: white;
-    padding: 0 5px;
+    padding: 0 8px;
     vertical-align: middle;
     cursor: pointer;
 }
 .fa-play-circle{
-    font-size: 25px;
+    font-size: 30px;
+}
+.time-b-n,.t-bar,.t-tot-bar{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.time-bar{
+    width: 100%;
+    padding: 10px 0 5px;
+}
+.t-bar{
+    width: 65%;
+    height: 3px;
+    background-color: rgb(122, 122, 122);
+    margin: 0 15px;
+}
+.t-b-n{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+/* parte destra della toolbar  */
+
+.footer-r{
+    width: 160px;
+    height: 100%;
 }
