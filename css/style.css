@@ -150,14 +150,19 @@ body{
     height: 100%;
     width: calc(100% - 260px);
 }
+
 .main-cont{
-    padding: 12px;
+    padding: 12px 12px 0;
+    height: calc(100% - 90px);
     overflow: auto;
 }
 .recently-played{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+.playlist-account{
+    display: flex;
+    justify-content: flex-start;
 }
 .box-song{
     margin: 5px;
@@ -184,11 +189,12 @@ body{
     color: white;
     padding: 20px 0;
 }
-.cover-song{
-    position: relative;
-}
 .cover-song img{
     width: 100%;
+}
+.cover-song{
+    position: relative;
+    height: calc(100% - 99px);
 }
 .text-song{
     height: 99px;
@@ -197,12 +203,13 @@ body{
 }
 .text-song h5{
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .text-song p{
-    font-size: 0.6em;
+    font-size: 0.7em;
+    font-weight: 600;
     color: rgb(155, 155, 155);
-    padding-top: 3px;
+    padding-top: 5px;
 }
 .cover-change{
     width: 100%;
@@ -229,7 +236,6 @@ body{
 .main-f{
     display: flex;
     justify-content: flex-start;
-    min-height: 90px;
     height: 90px;
     width: 100%;
     background-color: rgb(43, 43, 43);
