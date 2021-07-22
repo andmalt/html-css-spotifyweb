@@ -124,19 +124,30 @@ body{
 .dow-n>a>.download{
     margin-right: 5px;
 }
+.main-n>.nav-m-n>ul>li>a:hover{
+    color: white;
+}
+
+.p-list-n>ul>li>a:hover{
+    color: white;
+}
+
 /*----------- section head ------------ */
 .button-h{
     position: absolute;
     right: 1px;
     z-index: 11;
     padding: 10px 35px;
-    margin: 25px 5px;
+    margin: 25px 10px;
     background-color: rgba(41, 41, 41, 0);
     border: none;
     border: 1px solid white;
     border-radius: 25px;
     color: white;
     font-weight: 600;
+}
+.button-h:hover{
+    transform: scale(1.1);
 }
 .main-h{
     width: 100%;
@@ -256,10 +267,9 @@ h1:nth-of-type(3){
 .cover-song:hover .cover-change{
     display: block;
 }
-.p-list-n li:hover .p-list-n li>a{
+.main-cont>.mini-nav li>a:hover{
     color: white;
 }
-
 @media screen and (max-width:878px){
     .recently-played{
         flex-wrap: wrap;
