@@ -148,6 +148,23 @@ body{
 .nav-m-n-n img{
     width: 100%;
 }
+.main-acc-n-n{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.dow-n-n{
+    display: none;
+    padding-bottom: 5px;
+}
+.acc-n-n{
+    display: none;
+    align-self: center;
+    width: 70%;
+    padding-bottom: 10px;
+}
 
 @media screen and (max-width:552px) {
     .logo-n{
@@ -177,6 +194,9 @@ body{
     }
     .nav-m-n-n li{
         padding-top: 5px;
+    }
+    .dow-n-n,.acc-n-n{
+        display: block;
     }
 }
 
@@ -277,6 +297,7 @@ h1:nth-of-type(3){
 .cover-song{
     position: relative;
     cursor: pointer;
+    width: 97%;
 }
 .text-song{
     height: 30%;
