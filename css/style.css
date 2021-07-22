@@ -156,6 +156,7 @@ body{
     height: calc(100% - 90px);
     overflow: auto;
 }
+
 .recently-played{
     display: flex;
     justify-content: flex-start;
@@ -164,10 +165,14 @@ body{
     display: flex;
     justify-content: flex-start;
 }
+.playlist-recommended{
+    display: flex;
+    justify-content: flex-start;
+}
 .box-song{
     margin: 5px;
-    height: 280px;
-    flex: 0 1 180px;
+    max-width: 180px;
+    flex: 1 1 180px;
 }
 .mini-nav{
     width: 100%;
@@ -188,16 +193,28 @@ body{
 .main-cont h1{
     color: white;
     padding: 20px 0;
+    font-size: 1.7em;
+}
+.main-cont h1:nth-of-type(2),
+h1:nth-of-type(3){
+    color: white;
+    padding: 20px 0 5px;
+    font-size: 1.7em;
+}
+.main-cont p{
+    color: rgb(155, 155, 155);
+    font-size: 0.7em;
+    padding: 5px 0 10px;
+    margin-bottom: 5px;
 }
 .cover-song img{
     width: 100%;
 }
 .cover-song{
     position: relative;
-    height: calc(100% - 99px);
 }
 .text-song{
-    height: 99px;
+    height: 30%;
     padding-top: 6px;
     text-align: center;
 }
@@ -210,6 +227,12 @@ body{
     font-weight: 600;
     color: rgb(155, 155, 155);
     padding-top: 5px;
+}
+.playlist-recommended .cover-song img{
+    border-radius: 50%;
+}
+.playlist-recommended .cover-change{
+    border-radius: 50%;
 }
 .cover-change{
     width: 100%;
@@ -229,6 +252,17 @@ body{
     transform: translate(-50% , -50%);
     color: white;
 }
+
+@media screen and (max-width:878px){
+    .recently-played{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
 /*---------------- footer ------------------ */
 
 /* parte sinistra della toolbar dove fa vedere la cover con nome brano */
